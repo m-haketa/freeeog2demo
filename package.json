@@ -1,0 +1,50 @@
+{
+  "name": "freeeog2demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "ts-node-dev -r tsconfig-paths/register ./src/server/index.ts",
+    "tsnode": "ts-node -r tsconfig-paths/register",
+    "openapi2aspida": "rimraf ./src/server/aspida && mkdirp ./src/server/aspida && openapi2aspida --build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express-session": "^1.17.0",
+    "@types/html-webpack-plugin": "^3.2.3",
+    "@types/node": "^14.0.13",
+    "@types/node-fetch": "^2.5.7",
+    "@types/passport": "^1.0.3",
+    "@types/passport-oauth2": "^1.4.9",
+    "@types/passport-oauth2-refresh": "^1.1.1",
+    "@types/ramda": "github:types/npm-ramda#dist",
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-prefer-arrow": "^1.2.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "openapi2aspida": "^0.8.0",
+    "prettier": "^2.0.5",
+    "rimraf": "^3.0.2",
+    "style-loader": "^1.2.1",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.48",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "@aspida/node-fetch": "^0.5.0",
+    "await-semaphore": "^0.1.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "node-fetch": "^2.6.0",
+    "passport": "^0.4.1",
+    "passport-oauth2": "^1.5.0",
+    "passport-oauth2-refresh": "^2.0.0",
+    "ramda": "^0.27.0",
+    "tsconfig-paths": "^3.9.0"
+  }
+}

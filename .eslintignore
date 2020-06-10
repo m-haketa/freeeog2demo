@@ -1,0 +1,4 @@
+graphql.ts
+./src/server/aspida/**/*
+**/__generated__/**/*
+**/node_modules/**/*
